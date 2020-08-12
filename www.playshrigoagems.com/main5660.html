@@ -1,0 +1,749 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+
+<!-- Mirrored from www.playshrigoagems.com/main?hview=home_content_vertical by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 12 Aug 2020 09:57:25 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <script type='text/javascript' src="js/jquery-1.7.2.js"></script>
+    <script type="text/javascript">
+        var base_url = "index.html";
+        var chat_id;
+        var user_id = "";
+        
+        var currTime = '';
+        
+        var localTime = +Date.now();
+        var timeDiff = '';
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!--<meta name="description" content="Reflect Template" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />-->
+    <title>GOA Star</title>
+    
+<!--  <link rel="stylesheet" href="http://www.playshrigoagems.com/css/style.css" type="text/css" media="screen" />-->
+    <link rel="stylesheet" href="css/jquery-ui.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/jquery.wysiwyg.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/admin.css" type="text/css" media="screen" />
+   <!-- <link rel="stylesheet" href="http://www.playshrigoagems.com/css/styles_menu.css" />-->
+    <script type='text/javascript' src="js/jquery-1.7.2.js"></script> 
+
+    <!--<script type='text/javascript' src="http://www.playshrigoagems.com/js/jquery.dropkick-1.0.0.js"></script>-->
+    <script type='text/javascript' src="js/homejs200205.js"></script>
+    <!--<script type='text/javascript' src="http://www.playshrigoagems.com/js/homejs2019.js"></script>
+    <script type="text/javascript" src="http://www.playshrigoagems.com/js/ui/jquery.ui.core.js"></script>
+    <script type="text/javascript" src="http://www.playshrigoagems.com/js/ui/jquery.ui.widget.js"></script>
+    <script type="text/javascript" src="http://www.playshrigoagems.com/js/ui/jquery.ui.datepicker.js"></script>-->
+    
+    <!--Scripts FOR mENU-->
+    <style type="text/css">
+        #marqueecontainer {
+            position: relative;
+            width: 300px;
+            /*marquee width */
+            height: 200px;
+            /*marquee height */
+            background-color: #ECF4FE;
+            /*EEEEEE;/* white;*/
+            overflow: hidden;
+            border: 1px solid #666666;
+            /*padding: 5px;*/
+            padding-top: 5px;
+            padding-left: 10px;
+            float: right;
+        }
+    </style>
+
+    <!--<style type="text/css">
+        div.home_viewport {
+            font-family: Verdana, Arial, sans-serif;
+            padding: 5px;
+            min-height: 290px;
+            color: black;
+            max-height: 290px;
+            height: 290px;
+            overflow-x: hidden;
+            overflow-y: auto;
+            word-wrap: break-word;
+        }
+        
+        div.home_viewport ul {
+            list-style-type: none;
+            padding-left: 10px;
+        }
+        
+        div.home_viewport ul li {
+            margin-top: 10px;
+            width: 85%;
+        }
+        
+        span.chat_message_header {
+            font-size: 1em;
+            font-family: "MS Trebuchet", Arial, sans-serif;
+            color: #547980;
+        }
+        
+        label.message_content {
+            font-size: 1.2em;
+            margin-top: 0px;
+            margin-bottom: 5px;
+            padding-left: 10px;
+            margin-right: 0px;
+        }
+        
+        input#chat_message {
+            margin-top: 5px;
+            border: 1px solid #585858;
+            width: 70%;
+            font-size: 1.2em;
+            margin-right: 10px;
+        }
+        
+        input#submit_message {
+            font-size: 2em;
+            padding: 5px 10px;
+            vertical-align: top;
+            margin-top: 5px;
+        }
+        
+        div#chat_input {
+            margin-bottom: 10px;
+        }
+        
+        div.home_viewport ul li.by_current_user span.chat_message_header {
+            color: #e9561b;
+        }
+        
+        /* DivTable.com */
+        .divTable{
+                display: table;
+                width: 100%;
+        }
+        .divTableRow {
+                display: table-row;
+        }
+        .divTableHeading {
+                background-color: #EEE;
+                display: table-header-group;
+        }
+        .divTableCell, .divTableHead {
+                border: 1px solid #999999;
+                display: table-cell;
+                padding: 3px 10px;
+        }
+        .divTableHeading {
+                background-color: #EEE;
+                display: table-header-group;
+                font-weight: bold;
+        }
+        .divTableFoot {
+                background-color: #EEE;
+                display: table-footer-group;
+                font-weight: bold;
+        }
+        .divTableBody {
+                display: table-row-group;
+        }
+    </style>
+-->
+<style type="text/css">
+               .buttonblink {
+  background-color: #004A7F;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  border: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Arial;
+  font-size: 20px;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  -webkit-animation: glowing 1500ms infinite;
+  -moz-animation: glowing 1500ms infinite;
+  -o-animation: glowing 1500ms infinite;
+  animation: glowing 1500ms infinite;
+}
+@-webkit-keyframes glowing {
+  0% { background-color: #B20000; -webkit-box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #FF0000; -webkit-box-shadow: 0 0 40px #FF0000; }
+  100% { background-color: #B20000; -webkit-box-shadow: 0 0 3px #B20000; }
+}
+
+@-moz-keyframes glowing {
+  0% { background-color: #B20000; -moz-box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #FF0000; -moz-box-shadow: 0 0 40px #FF0000; }
+  100% { background-color: #B20000; -moz-box-shadow: 0 0 3px #B20000; }
+}
+
+@-o-keyframes glowing {
+  0% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #FF0000; box-shadow: 0 0 40px #FF0000; }
+  100% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+}
+
+@keyframes glowing {
+  0% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #FF0000; box-shadow: 0 0 40px #FF0000; }
+  100% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+}
+    </style>
+
+</head>
+
+<body style="color:#000000;">
+    <div align="center" >
+                                       <div style="background-color:#990000">                         <marquee id="a" scrollamount="4" ONMOUSEOVER="this.stop();" ONMOUSEOUT="this.start();" style=" font-family:Verdana; color:#00000">
+                            <a href="apks/PlayGoaStar3.apk"><span style="color: white">Click here to download PlayMainGoldenRajashri Mobile App</span></a> |
+                                                                                                            </marquee>
+                    </div>
+              
+            <!-- PAGE AREA -->
+
+                    <div align="center" class="container" style="width: 100%; ">
+                        <table cellspacing="0" cellpadding="0" width="100%">
+                            <tr>
+                                <td style="background-color: #990000; width:5px; ">
+                                    <!-- Left image-->
+                                </td>
+                                <td align="center">
+                                    <table cellpadding="0" cellspacing="0" style="width: 100%">
+                                        <!--HEADER -->
+                                        <tr>
+                                            <td height="10px" colspan="3" align="center" style="background-color:#990000; width:23%">
+                                                <img src="images/goalogo.png" style="width:180px;"/>
+                                            </td>
+                                            <!-- AJAX VIEWPORT-->
+                                            <td colspan="2" style="background-color:#990000">
+                                                <div id="home_viewport" align="center" style="width: 100%; ">
+                                                    <table  style="background-color:#990000; width:100%" >
+	<tr>
+		<td colspan="16">
+			<div align="center">
+                            <table width="100%" style="border: #e9561b; border-style: dotted;  " >
+					<tr>
+                                            <td align="center" style="" >
+                                                <span style=" font-size:18px;  vertical-align: auto; color:#FFFFFF">
+                                                    <span style="color: #fed22f; font-size: medium ">Date</span>
+                                                    <strong><br/><span id="todays_date">&nbsp;</span><br/> 
+                                                    <span style="color: #fed22f; font-size: medium ">Result Draw</span><br/>
+                                                    <span id="result_time">&nbsp;</span></strong></span>
+                                            </td>
+						<td align="center">
+							<span style=" font-size:24px; color:#FFFFFF"><strong>
+						<table style="color:#990000; text-align:center; font-size:18px; width:100%; ">
+                                       <tr>
+                                           <td style="background-repeat: repeat-y; background-position: center; background-image:url(images/gb_back.png); background-size: 55px 55px; width:55px; height:55px; "> <strong>GA</strong><br/><span style="font-size:14px">60-69</span> </td>
+               					   <td style="background-repeat: repeat-y; background-position: center; background-image:url(images/gb_back.png); background-size: 55px 55px; width:55px; height:55px;"> <strong>SA</strong><br/><span style="font-size:14px">20-29</span> </td>
+               					     <td style="background-repeat: repeat-y; background-position: center; background-image:url(images/gb_back.png); background-size: 55px 55px; width:55px; height:55px;"><strong>RA</strong><br/><span style="font-size:14px">10-19</span> </td>
+               						<td style="background-repeat: repeat-y; background-position: center; background-image:url(images/gb_back.png); background-size: 80px 100px; width:80px; height:90px; " rowspan=2><strong style="font-size:22px;"> GOA </strong><br /> Star </td>
+               						<td style="background-repeat: repeat-y; background-position: center; background-image:url(images/gb_back.png); background-size: 55px 55px; width:55px; height:55px; font-size:20pt; color: rgb(255,0,0);"><span id="star3_single">&nbsp;</span></td>
+                                       </tr>
+               					<tr>
+                                             <td style="background-repeat: repeat-y; background-position: center; background-image:url(images/res_back.png);  background-size: 55px 45px; width:55px; height:45px; font-size:20pt; color: rgb(255,0,0);"><span id="result_GA">&nbsp;</span></td>
+							         <td style="background-repeat: repeat-y; background-position: center; background-image:url(images/res_back.png); background-size: 55px 45px; width:55px; height:45px; font-size:20pt; color: rgb(255,0,0);"><span id="result_GB">&nbsp;</span></td>
+							         <td style="background-repeat: repeat-y; background-position: center; background-image:url(images/res_back.png); background-size: 55px 45px; width:55px; height:45px; font-size:20pt; color: rgb(255,0,0);"><span id="result_GC">&nbsp;</span></td>
+							         <td style="background-repeat: repeat-y; background-position: center; background-image:url(images/res_back.png); background-size: 55px 45px; width:55px; height:45px; font-size:20pt; color: rgb(255,0,0);"><span id="star3_sp">&nbsp;</span></td>
+							   </tr>
+                                   </table>
+                                       </strong>
+                                   </span>
+				          </td>
+					</tr>
+				</table>							
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="16">
+			<div>
+				<table width="100%" >
+                                    <tr>
+                                        <td align="left"><span style=" font-size:16px; color: #fed22f">Current Time<strong><br /><span style="color: #FFFFFF" id="currentTime">&nbsp;</span></strong></span></td>
+					<td align="center"><span style=" font-size:20px; color:#fed22f">Next Draw Time<strong><br /><span style="color: #FFFFFF" id="nextDraw">&nbsp;</span></strong></span></td>
+					<td align="right"><span style=" font-size:16px; color:#fed22f">Time Remaining<strong><br /><span style="color: #FFFFFF" id="timeRemaining">&nbsp;</span></strong></span></td>
+                                    </tr>
+                                </table>							
+			</div>
+		</td>
+	</tr>
+</table>
+                                                </div>
+                                            </td>
+                                            <td align="right" style="width:26%; background-color:#990000">
+                                                <form method="post" action="http://www.playshrigoagems.com/login/validate_login" id="home" name="home">
+                                                    <input type="hidden" id="nxtDrTime" name="nxtDrTime" value="" />
+                                                    <div id="logindiv" style="padding: 5px 5px 0px 5px; display:block">
+                                                        <span style=" font-size:18px; color:#FFFFFF">Card No </span>&nbsp;&nbsp;
+                                                        <input type="text" id="cardno" name="cardno" />
+                                                        <br />
+                                                        <span style=" font-size:18px; color:#FFFFFF">Pin No </span>&nbsp;&nbsp;
+                                                        <input type="password" id="pinno" name="pinno" />
+                                                        <br />
+                                                        <input style=" font-size:18px; height:40px; width:120px; padding:0px" name="btnLogin" type="button" class="button" value="Login" />
+                                                    </div>
+                                                   <!-- <div id="logindiv" style="font-size:18px; padding: 5px 5px 0px 5px; display:none">
+                                                        <span style=" font-size:18px; color:#FFFFFF">Welcome </span>
+                                                        <br />
+                                                        <div id="pointlimit_viewport" style=" font-size:18px;">
+                                                        </div>
+
+                                                        <span style=" font-size:14px; color:#FFFFFF"><a style=" color:#FFFF00"  href="http://www.playshrigoagems.com/login/logout">Logout</a></span>
+                                                        <br/>
+                                                        <span style=" font-size:14px; color:#FFFFFF"><a style=" color:#FFFF00"  href="http://www.playshrigoagems.com/users/resetpassword">Reset Password</a></span>
+                                                    </div>-->
+                                                </form>
+                                            </td>
+                                        </tr>
+                                        <tr style="background-color: #343131; color: #9ED929; font-weight: bolder; font-size: medium;">
+                                            <td colspan="4"></td>
+                                            <td align="center">
+                                                <table>
+                                                    <tr style="height: 30px">
+                                                        <td><a style="color: #9ED929 " href="main.html">Home &nbsp;&nbsp;&nbsp;&nbsp; </a></td>
+                                                        <td><span style="color: #000000">|</span></td>
+                                                        <td><a style="color: #9ED929 " href="results/result_old.html"> &nbsp;&nbsp;&nbsp;&nbsp; Results </a></td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                            <td></td>
+                                        </tr>
+                                    </table>
+<br/>
+							    <a  class="buttonblink" href="http://playgoastar.com/">Visit Goa-Star</a> <br/><br/>
+<a  class="button" href="main5660.html?hview=home_content_vertical">Vertical View</a>
+
+<br/><br/>
+
+
+<form method="post" id="home_content" name="home_content" class="default" action="http://www.playshrigoagems.com/main/print_ticket">
+    
+    <table><tr><td>
+    <table border="0" cellpadding="0" cellspacing="0" style="font-size:16px" >
+        <tr align="center" style="font-size:16px; color:#FF3300"  >
+            <td></td>
+            <td bgcolor="#FFFF99">MRP</td>
+            <td bgcolor="#FFFF99">&nbsp;Win&nbsp;</td>
+                            <td bgcolor="#FFFF99">1</td>
+                            <td bgcolor="#FFFF99">2</td>
+                            <td bgcolor="#FFFF99">3</td>
+                            <td bgcolor="#FFFF99">4</td>
+                            <td bgcolor="#FFFF99">5</td>
+                            <td bgcolor="#FFFF99">6</td>
+                            <td bgcolor="#FFFF99">7</td>
+                            <td bgcolor="#FFFF99">8</td>
+                            <td bgcolor="#FFFF99">9</td>
+                        <td bgcolor="#FFFF99">0</td>
+            <td bgcolor="#FFFF99">Qty</td>
+            <td bgcolor="#FFFF99">Amount</td>
+        </tr>
+        <tr height="5px">
+            <td colspan="16"><br /></td>
+        </tr>
+        
+        <tr height="45px">
+            <td background="images/buttonshape.png" style="padding-left:15px; color:#FF6600; font-size:16px"><strong>Golden-A Gems</strong></td>
+            <td style="border:1px solid #FFFF99;  font-size:16px" align="center">11</td>
+            <td align="center" style=" font-size:16px">100</td>
+                            <td align="center"><input type="text" id="g1" name="g1" class="numinput" maxlength="3" /></td>
+                            <td align="center"><input type="text" id="g2" name="g2" class="numinput" maxlength="3" /></td>
+                            <td align="center"><input type="text" id="g3" name="g3" class="numinput" maxlength="3" /></td>
+                            <td align="center"><input type="text" id="g4" name="g4" class="numinput" maxlength="3" /></td>
+                            <td align="center"><input type="text" id="g5" name="g5" class="numinput" maxlength="3" /></td>
+                            <td align="center"><input type="text" id="g6" name="g6" class="numinput" maxlength="3" /></td>
+                            <td align="center"><input type="text" id="g7" name="g7" class="numinput" maxlength="3" /></td>
+                            <td align="center"><input type="text" id="g8" name="g8" class="numinput" maxlength="3" /></td>
+                            <td align="center"><input type="text" id="g9" name="g9" class="numinput" maxlength="3" /></td>
+                        <td align="center"><input type="text" id="g0" name="g0" class="numinput" maxlength="3"  /></td>
+            <td align="center"><input type="text" id="gQty" name="gQty" class="numQty" disabled="disabled"  style="text-align:right"/></td>
+            <td align="center"><input type="text" id="gAmt" name="gAmt" class="numAmt" disabled="disabled" style="text-align:right" /></td>
+        </tr>
+                                         <!--GBB Row -->
+              <!--
+                   <tr height="45px">
+            <td background="http://www.playshrigoagems.com/images/buttonshape.png" style="padding-left:15px; color:#FF6600; font-size:16px"><strong>G-B Gems</strong></td>
+            <td style="border:1px solid #FFFF99; font-size:16px" align="center">11</td>
+            <td align="center"  style=" font-size:16px">100</td>
+                            <td align="center"><input type="text" id="b1" name="b1" class="numinput" maxlength="3" /></td>
+                            <td align="center"><input type="text" id="b2" name="b2" class="numinput" maxlength="3" /></td>
+                            <td align="center"><input type="text" id="b3" name="b3" class="numinput" maxlength="3" /></td>
+                            <td align="center"><input type="text" id="b4" name="b4" class="numinput" maxlength="3" /></td>
+                            <td align="center"><input type="text" id="b5" name="b5" class="numinput" maxlength="3" /></td>
+                            <td align="center"><input type="text" id="b6" name="b6" class="numinput" maxlength="3" /></td>
+                            <td align="center"><input type="text" id="b7" name="b7" class="numinput" maxlength="3" /></td>
+                            <td align="center"><input type="text" id="b8" name="b8" class="numinput" maxlength="3" /></td>
+                            <td align="center"><input type="text" id="b9" name="b9" class="numinput" maxlength="3" /></td>
+                        <td align="center"><input type="text" id="b0" name="b0" class="numinput" maxlength="3" /></td>              
+            <td align="center"><input type="text" id="bQty" name="bQty" class="numQty" disabled="disabled" style="text-align:right" /></td>
+            <td align="center"><input type="text" id="bAmt" name="bAmt" class="numAmt" disabled="disabled"  style="text-align:right"/></td>
+        </tr>
+              -->
+                                         <!--GBB Row -->
+        
+        <tr height="45px">
+            <td background="images/buttonshape.png" style="padding-left:15px; color:#FF6600; font-size:16px"><strong>Shubhlakshami-A Gems</strong></td>
+            <td style="border:1px solid #FFFF99; font-size:16px" align="center">11</td>
+            <td align="center"  style=" font-size:16px">100</td>
+                            <td align="center"><input type="text" id="r1" name="r1" class="numinput" maxlength="3" /></td>
+                            <td align="center"><input type="text" id="r2" name="r2" class="numinput" maxlength="3" /></td>
+                            <td align="center"><input type="text" id="r3" name="r3" class="numinput" maxlength="3" /></td>
+                            <td align="center"><input type="text" id="r4" name="r4" class="numinput" maxlength="3" /></td>
+                            <td align="center"><input type="text" id="r5" name="r5" class="numinput" maxlength="3" /></td>
+                            <td align="center"><input type="text" id="r6" name="r6" class="numinput" maxlength="3" /></td>
+                            <td align="center"><input type="text" id="r7" name="r7" class="numinput" maxlength="3" /></td>
+                            <td align="center"><input type="text" id="r8" name="r8" class="numinput" maxlength="3" /></td>
+                            <td align="center"><input type="text" id="r9" name="r9" class="numinput" maxlength="3" /></td>
+                        <td align="center"><input type="text" id="r0" name="r0" class="numinput" maxlength="3" /></td>              
+            <td align="center"><input type="text" id="rQty" name="rQty" class="numQty" disabled="disabled" style="text-align:right" /></td>
+            <td align="center"><input type="text" id="rAmt" name="rAmt" class="numAmt" disabled="disabled"  style="text-align:right"/></td>
+        </tr>
+        <tr height="45px">
+            <td width="140px"  background="images/buttonshape.png" style="padding-left:15px; color:#FF6600; font-size:16px"><strong>Rajashri-A Gems</strong></td>
+            <td style="border:1px solid #FFFF99; font-size:16px" align="center">11</td>
+            <td align="center"  style=" font-size:16px">100</td>
+                            <td align="center"><input type="text" id="s1" name="s1" class="numinput" maxlength="3"/></td>
+                            <td align="center"><input type="text" id="s2" name="s2" class="numinput" maxlength="3"/></td>
+                            <td align="center"><input type="text" id="s3" name="s3" class="numinput" maxlength="3"/></td>
+                            <td align="center"><input type="text" id="s4" name="s4" class="numinput" maxlength="3"/></td>
+                            <td align="center"><input type="text" id="s5" name="s5" class="numinput" maxlength="3"/></td>
+                            <td align="center"><input type="text" id="s6" name="s6" class="numinput" maxlength="3"/></td>
+                            <td align="center"><input type="text" id="s7" name="s7" class="numinput" maxlength="3"/></td>
+                            <td align="center"><input type="text" id="s8" name="s8" class="numinput" maxlength="3"/></td>
+                            <td align="center"><input type="text" id="s9" name="s9" class="numinput" maxlength="3"/></td>
+                        <td align="center"><input type="text" id="s0" name="s0" class="numinput" maxlength="3"/></td>               
+            <td align="center"><input type="text" id="sQty" name="sQty" class="numQty" disabled="disabled" style="text-align:right" /></td>
+            <td align="center"><input type="text" id="sAmt" name="sAmt" class="numAmt" disabled="disabled" style="text-align:right" /></td>
+        </tr>
+                
+        <tr height="45px">
+            <td colspan="3" ></td>
+            <td colspan="5"></td>
+            <td colspan="3"></td>
+            <td>
+            </td>
+            <td>Total</td>
+            <td align="center"><input type="text" id="totalQty" name="totalQty" class="numQty" disabled="disabled" style="text-align:right" /></td>
+            <td align="center"><input type="text" id="totalAmt" name="totalAmt" class="numAmt" disabled="disabled" style="text-align:right" /></td>
+        </tr>
+        <tr height="45px">
+            <td align="left"  >
+            <!--    <a href="http://www.playshrigoagems.com/home/delete_ticket?uid=1" class="button">Delete Ticket</a>-->
+                                <input type="text" id="hAdvSlot" name="hAdvSlot" style=" display: none;" />
+                <input type="button" name="advbtn" id="advbtn" onclick="advance_slot(1)" class="button" value="Advance Slot" >     
+                        </td>
+                        <td align="left" colspan=7>
+                            <div id="curslot"  style="display:none; "></div>
+                            <div id="advslot"  style="display:none">
+                <select name='advanceSlot' id="advanceSlot">
+                                    </select>
+                            </div>
+            </td>
+            
+            <td align="right" colspan=7 >
+            <input type="button" onclick="ClearAllControls()" class="button" value="Clear All">     
+                        <input type="button" id="mySubmitButton" onclick="print_ticket()" class="button" value="Print">
+                       <!--<input type="submit" onclick="print_ticket()" class="button" value="PrintS">-->
+            </td>
+        </tr>
+    </table>
+    </td>
+    <td>
+        <div id="result_viewport" align="center">
+            <table   style="color: #990000; text-align:center">
+                 <tr>
+                      <td  align="center"><span style=" font-size:14px; color:#990000"><strong><span id="result_time">&nbsp;</span></strong></span>
+                      </td>
+                 </tr>
+                 <tr>
+                      <td style="background-repeat: repeat-y; background-image:url('images/res_back_vertical.html'); background-position:center; width:50px; height:42px; color:#990000; font-size:18px"><strong><span id="result_GA">&nbsp;</span></strong></td>
+                 </tr>
+                 <tr>
+                      <td align="center" style="background-repeat: repeat-y; background-image:url('images/res_back_vertical.html'); background-position:center; width:50px; height:42px; color:#990000; font-size:18px"><strong><span id="result_GB">&nbsp;</span><strong></td>
+                 </tr>
+                 <tr>
+                      <td align="center" style="background-repeat: repeat-y; background-image:url('images/res_back_vertical.html'); background-position:center; width:50px; height:40px; color:#990000; font-size:18px"><strong><span id="result_GC">&nbsp;</span><strong></td>
+                 </tr>
+                 <tr>
+                      <td><br /><br /><br /><br /><br /></td>
+                 </tr>
+            </table>
+        </div>
+    </td>
+    </tr>
+    </table>
+</form>
+
+                            <!--  HOME CONTENT END--!>
+                                        </div>
+                                </td>
+                                <td style="background-color: #990000; width:5px; ">
+                                    <!-- Right image-->
+                                </td>
+                            </tr>
+                        </table>
+
+                    </div>
+
+             
+<!--                  <div style="background-color:#990000; font-size: 6px;  color: #FFFFFF">
+                        Purchase of lottery using this website is strictly prohibited in the states where lotteries are banned.
+                    </div>-->
+                    <div style="text-align: center; vertical-align: top; background-color: black;"><br/>
+                    <a href="apks/PlayGoaStar3.apk"><span style="color: rgb(102,204,0); font-size: large; vertical-align: middle; ">Click here to donwload Mobile App</span></a>
+                </div>
+                    <div style="background-color: black; color: yellow; padding-top: 25px; padding-bottom: 25px; font-size: 24px ; font-weight: 200;  ">
+                        
+                        For Results Contact : 9983107444 | 9649117666 | 9982217888<br/>
+                    </div>
+                    <div style="background-color:#990000; color: #FFFFFF; font-size: 6px">
+                        All the information shown here is sponsored and we warn you that Satta Matka gambling in your country,state may be banned or illegal.
+                        We are not responsible for any issues or scam. We respect all country, state rules/laws. If you not agree with our site disclaimer. Please quit our site right now.
+                    </div>
+                    <div style="background-color:#990000; color: #FFFFFF; font-size: 6px">
+                        You must be above 18 years to play.
+                    </div>
+             
+
+                                    <div style="background-color:#990000">
+
+                            <!--<span> <strong style>To Create Your Account, Contact : +91-7083444723</strong> </span>	-->
+                        </div>
+                        <div style="background-color:#990000; font-size: 6px;">
+                            @Copyright2020 All rights reserved to S M Marketing. <input type="hidden" id="nxtDrTime" name="nxtDrTime" />
+                        </div>
+                    
+    </div>
+
+    <br/>
+    <br/>
+     <script>
+    // get_total_chatroom();
+    // alert("Draw Time : " + countDownDate);
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+     //alert("Draw Time : " + countDownDate);
+    var drawDtTime = document.getElementById("nxtDrTime").value;
+    var countDownDate =  new Date( drawDtTime ).getTime();
+
+    // alert ("Curr Time : " + currTime);
+      // Get todays date and time
+      var now = new Date().getTime();
+     // now.setSeconds(now.getSeconds() + 1);
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+       
+      /* Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));*/
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+      // Display the result in the element with id="demo"
+      document.getElementById("timeRemaining").innerHTML =  twoDigit(hours) + ":" + twoDigit(minutes) + ":" + twoDigit(seconds);
+    
+      // If the count down is finished, write some text 
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("timeRemaining").innerHTML = "00:00:00";
+        //location.reload(); 
+      }
+    }, 1000);
+
+function twoDigit(n){
+    return n > 9 ? "" + n: "0" + n;
+}
+
+</script>
+        
+        <script type="text/javascript">
+
+$('#g1').keyup(function() { doCalculations(); });
+$('#g2').keyup(function() { doCalculations(); });
+$('#g3').keyup(function() { doCalculations(); });
+$('#g4').keyup(function() { doCalculations(); });-
+$('#g5').keyup(function() { doCalculations(); });
+$('#g6').keyup(function() { doCalculations(); });
+$('#g7').keyup(function() { doCalculations(); });
+$('#g8').keyup(function() { doCalculations(); });
+$('#g9').keyup(function() { doCalculations(); });
+$('#g0').keyup(function() { doCalculations(); });
+
+$('#r1').keyup(function() { doCalculations(); });
+$('#r2').keyup(function() { doCalculations(); });
+$('#r3').keyup(function() { doCalculations(); });
+$('#r4').keyup(function() { doCalculations(); });
+$('#r5').keyup(function() { doCalculations(); });
+$('#r6').keyup(function() { doCalculations(); });
+$('#r7').keyup(function() { doCalculations(); });
+$('#r8').keyup(function() { doCalculations(); });
+$('#r9').keyup(function() { doCalculations(); });
+$('#r0').keyup(function() { doCalculations(); });
+
+/*$('#b1').keyup(function() {   doCalculations(); });
+$('#b2').keyup(function() { doCalculations(); });
+$('#b3').keyup(function() { doCalculations(); });
+$('#b4').keyup(function() { doCalculations(); });
+$('#b5').keyup(function() { doCalculations(); });
+$('#b6').keyup(function() { doCalculations(); });
+$('#b7').keyup(function() { doCalculations(); });
+$('#b8').keyup(function() { doCalculations(); });
+$('#b9').keyup(function() { doCalculations(); });
+$('#b0').keyup(function() { doCalculations(); });*/
+
+$('#s1').keyup(function() { doCalculations(); });
+$('#s2').keyup(function() { doCalculations(); });
+$('#s3').keyup(function() { doCalculations(); });
+$('#s4').keyup(function() { doCalculations(); });
+$('#s5').keyup(function() { doCalculations(); });
+$('#s6').keyup(function() { doCalculations(); });
+$('#s7').keyup(function() { doCalculations(); });
+$('#s8').keyup(function() { doCalculations(); });
+$('#s9').keyup(function() { doCalculations(); });
+$('#s0').keyup(function() { doCalculations(); });
+
+function print_ticket()
+{
+    alert("Please visit our new website, to book the tickets!");
+//  if(document.getElementById('totalQty').value=='' || document.getElementById('totalQty').value<=0 )
+//  {
+//       alert("Enter Ticket Value...!");
+//  }
+//  else{
+//  
+//          add_ticket();
+//  
+//  }   
+}
+
+function advance_slot()
+{
+    //alert(V);
+    if( V == 'advslot') {
+        V = 'curslot';
+        document.getElementById( 'advslot' ).style.display = 'block';
+        $('#advbtn').val('Current Slot');
+        $('#hAdvSlot').val('advance');
+    } else {
+        V = 'advslot';
+        document.getElementById( 'curslot' ).style.display = 'block';
+        document.getElementById( 'advslot' ).style.display = 'none';
+        $('#advbtn').val('Advance Slot');
+        $('#hAdvSlot').val('current');
+    }
+}
+
+function switch_vertical()
+{
+        $.session.set()
+    window.location= "home.html";
+}
+
+function switch_horizontal()
+{
+        window.location= "home.html";
+}
+
+function show( value ) {
+    //document.getElementById( value ).style.display = 'block';
+    if( value == 'acc'  ) {
+        document.getElementById( 'acc' ).style.display = 'block';
+        
+    }
+    else
+    document.getElementById( 'acc' ).style.display = 'none';
+}
+function doCalculations()
+{
+    var gTotal = Number($('#g1').val()) + Number($('#g2').val()) + Number($('#g3').val()) + Number($('#g4').val()) + Number($('#g5').val()) + Number($('#g6').val()) + Number($('#g7').val()) + Number($('#g8').val()) + Number($('#g9').val()) + Number($('#g0').val());
+
+    var rTotal = Number($('#r1').val()) + Number($('#r2').val()) + Number($('#r3').val()) + Number($('#r4').val()) + Number($('#r5').val()) + Number($('#r6').val()) + Number($('#r7').val()) + Number($('#r8').val()) + Number($('#r9').val()) + Number($('#r0').val());
+        
+        //var bTotal = Number($('#b1').val()) + Number($('#b2').val()) + Number($('#b3').val()) + Number($('#b4').val()) + Number($('#b5').val()) + Number($('#b6').val()) + Number($('#b7').val()) + Number($('#b8').val()) + Number($('#b9').val()) + Number($('#b0').val());
+
+    var sTotal = Number($('#s1').val()) + Number($('#s2').val()) + Number($('#s3').val()) + Number($('#s4').val()) + Number($('#s5').val()) + Number($('#s6').val()) + Number($('#s7').val()) + Number($('#s8').val()) + Number($('#s9').val()) + Number($('#s0').val());
+    
+    
+    $('#gQty').val(gTotal);
+    $('#rQty').val(rTotal);
+        //$('#bQty').val(bTotal);
+    $('#sQty').val(sTotal);
+    
+    $('#gAmt').val(Number(gTotal) * 11);
+    $('#rAmt').val(Number(rTotal) * 11);
+        //$('#bAmt').val(Number(bTotal) * 11);
+    $('#sAmt').val(Number(sTotal) * 11);
+
+    $('#totalAmt').val(Number($('#gAmt').val()) + Number($('#rAmt').val()) + Number($('#sAmt').val()));
+    $('#totalQty').val(Number($('#gQty').val()) + Number($('#rQty').val()) + Number($('#sQty').val()));
+
+}
+
+jQuery.fn.ForceNumericOnly =
+function()
+{
+    return this.each(function()
+    {
+        $(this).keypress(function(e)
+        {
+            var key = e.Which || e.charCode || e.keyCode || 0;
+            // allow backspace, tab, delete, arrows, numbers and keypad numbers ONLY
+            return (
+                key == 8 || 
+                key == 9 ||
+                key == 46 ||
+                (key >= 37 && key <= 40) ||
+                (key >= 48 && key <= 57) );
+        });
+    });
+};
+
+$("#g1").ForceNumericOnly();
+$("#g2").ForceNumericOnly();
+$("#g3").ForceNumericOnly();
+$("#g4").ForceNumericOnly();
+$("#g5").ForceNumericOnly();
+$("#g6").ForceNumericOnly();
+$("#g7").ForceNumericOnly();
+$("#g8").ForceNumericOnly();
+$("#g9").ForceNumericOnly();
+$("#g0").ForceNumericOnly();
+
+$("#r1").ForceNumericOnly();
+$("#r2").ForceNumericOnly();
+$("#r3").ForceNumericOnly();
+$("#r4").ForceNumericOnly();
+$("#r5").ForceNumericOnly();
+$("#r6").ForceNumericOnly();
+$("#r7").ForceNumericOnly();
+$("#r8").ForceNumericOnly();
+$("#r9").ForceNumericOnly();
+$("#r0").ForceNumericOnly();
+
+/*$("#b1").ForceNumericOnly();
+$("#b2").ForceNumericOnly();
+$("#b3").ForceNumericOnly();
+$("#b4").ForceNumericOnly();
+$("#b5").ForceNumericOnly();
+$("#b6").ForceNumericOnly();
+$("#b7").ForceNumericOnly();
+$("#b8").ForceNumericOnly();
+$("#b9").ForceNumericOnly();
+$("#b0").ForceNumericOnly();*/
+
+$("#s1").ForceNumericOnly();
+$("#s2").ForceNumericOnly();
+$("#s3").ForceNumericOnly();
+$("#s4").ForceNumericOnly();
+$("#s5").ForceNumericOnly();
+$("#s6").ForceNumericOnly();
+$("#s7").ForceNumericOnly();
+$("#s8").ForceNumericOnly();
+$("#s9").ForceNumericOnly();
+$("#s0").ForceNumericOnly();
+
+</script>
+    </body>
+
+<!-- Mirrored from www.playshrigoagems.com/main?hview=home_content_vertical by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 12 Aug 2020 09:57:25 GMT -->
+</html>

@@ -1,0 +1,44 @@
+HTTrack3.49-2+htsswf+htsjava launched on Wed, 12 Aug 2020 15:26:00 at http://www.playshrigoagems.com/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" http://www.playshrigoagems.com/ -O1 "C:\My Web Sites\goa-star" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+15:27:25	Error: 	"Not Found" (404) at link www.playshrigoagems.com/images/res_back_vertical.png (from www.playshrigoagems.com/)
+15:27:25	Error: 	"Not Found" (404) at link www.playshrigoagems.com/home (from www.playshrigoagems.com/)
+15:27:25	Error: 	"Not Found" (404) at link www.playshrigoagems.com/images/jquery-ui-images/ui-bg_flat_75_ffffff_40x100.png (from www.playshrigoagems.com/css/jquery-ui.css)
+15:27:25	Error: 	"Not Found" (404) at link www.playshrigoagems.com/images/jquery-ui-images/ui-bg_highlight-soft_75_cccccc_1x100.png (from www.playshrigoagems.com/css/jquery-ui.css)
+15:27:25	Error: 	"Not Found" (404) at link www.playshrigoagems.com/images/jquery-ui-images/ui-bg_glass_75_e6e6e6_1x400.png (from www.playshrigoagems.com/css/jquery-ui.css)
+15:27:25	Error: 	"Not Found" (404) at link www.playshrigoagems.com/images/jquery-ui-images/ui-bg_glass_75_dadada_1x400.png (from www.playshrigoagems.com/css/jquery-ui.css)
+15:27:25	Error: 	"Not Found" (404) at link www.playshrigoagems.com/images/jquery-ui-images/ui-bg_glass_65_ffffff_1x400.png (from www.playshrigoagems.com/css/jquery-ui.css)
+15:27:25	Error: 	"Not Found" (404) at link www.playshrigoagems.com/images/jquery-ui-images/ui-bg_glass_55_fbf9ee_1x400.png (from www.playshrigoagems.com/css/jquery-ui.css)
+15:27:25	Error: 	"Not Found" (404) at link www.playshrigoagems.com/images/jquery-ui-images/ui-bg_glass_95_fef1ec_1x400.png (from www.playshrigoagems.com/css/jquery-ui.css)
+15:27:25	Error: 	"Not Found" (404) at link www.playshrigoagems.com/images/jquery-ui-images/ui-icons_222222_256x240.png (from www.playshrigoagems.com/css/jquery-ui.css)
+15:27:25	Error: 	"Not Found" (404) at link www.playshrigoagems.com/images/jquery-ui-images/ui-icons_888888_256x240.png (from www.playshrigoagems.com/css/jquery-ui.css)
+15:27:25	Error: 	"Not Found" (404) at link www.playshrigoagems.com/images/jquery-ui-images/ui-icons_454545_256x240.png (from www.playshrigoagems.com/css/jquery-ui.css)
+15:27:25	Error: 	"Not Found" (404) at link www.playshrigoagems.com/images/jquery-ui-images/ui-icons_2e83ff_256x240.png (from www.playshrigoagems.com/css/jquery-ui.css)
+15:27:25	Error: 	"Not Found" (404) at link www.playshrigoagems.com/images/jquery-ui-images/ui-icons_cd0a0a_256x240.png (from www.playshrigoagems.com/css/jquery-ui.css)
+15:27:25	Error: 	"Not Found" (404) at link www.playshrigoagems.com/images/jquery-ui-images/ui-bg_flat_0_aaaaaa_40x100.png (from www.playshrigoagems.com/css/jquery-ui.css)
+15:27:25	Error: 	"Not Found" (404) at link www.playshrigoagems.com/images/jquery.wysiwyg.gif (from www.playshrigoagems.com/css/jquery.wysiwyg.css)
+15:27:25	Error: 	"Not Found" (404) at link www.playshrigoagems.com/images/admin_nav_bg.gif (from www.playshrigoagems.com/css/admin.css)
+15:27:25	Error: 	"Not Found" (404) at link www.playshrigoagems.com/images/admin_nav_bg_over.gif (from www.playshrigoagems.com/css/admin.css)
+15:27:25	Error: 	"Not Found" (404) at link www.playshrigoagems.com/images/admin_footer_bg.gif (from www.playshrigoagems.com/css/admin.css)
+15:27:25	Error: 	"Not Found" (404) at link www.playshrigoagems.com/images/btn_delete.png (from www.playshrigoagems.com/css/admin.css)
+15:27:25	Error: 	"Not Found" (404) at link www.playshrigoagems.com/images/arrow_down.gif (from www.playshrigoagems.com/css/admin.css)
+15:27:25	Error: 	"Not Found" (404) at link www.playshrigoagems.com/images/arrow_up.gif (from www.playshrigoagems.com/css/admin.css)
+15:27:25	Error: 	"Not Found" (404) at link www.playshrigoagems.com/images/preview_bg.gif (from www.playshrigoagems.com/css/admin.css)
+15:27:25	Error: 	"Not Found" (404) at link www.playshrigoagems.com/images/loader.gif (from www.playshrigoagems.com/css/admin.css)
+15:27:25	Error: 	"Not Found" (404) at link www.playshrigoagems.com/images/icon_calendar.gif (from www.playshrigoagems.com/css/admin.css)
+15:27:25	Error: 	"Not Found" (404) at link www.playshrigoagems.com/images/popup_bg.png (from www.playshrigoagems.com/css/admin.css)
+15:27:25	Error: 	"Not Found" (404) at link www.playshrigoagems.com/images/popup_bottom.png (from www.playshrigoagems.com/css/admin.css)
+15:27:25	Error: 	"Not Found" (404) at link www.playshrigoagems.com/images/loading.gif (from www.playshrigoagems.com/css/admin.css)
+15:27:33	Error: 	"Not Found" (404) at link www.playshrigoagems.com/images/check0.png (from www.playshrigoagems.com/css/style_table.css)
+15:27:33	Error: 	"Not Found" (404) at link www.playshrigoagems.com/images/check1.png (from www.playshrigoagems.com/css/style_table.css)
+15:27:33	Error: 	"Not Found" (404) at link www.playshrigoagems.com/images/check2.png (from www.playshrigoagems.com/css/style_table.css)
+15:27:53	Error: 	"Not Found" (404) at link www.playshrigoagems.com/js/jquery.dropkick-1.0.0.js (from www.playshrigoagems.com/results/resultSummaryOld)
+15:27:55	Error: 	"Not Found" (404) at link www.playshrigoagems.com/images/favicon.ico (from www.playshrigoagems.com/login)
+
+HTTrack Website Copier/3.49-2 mirror complete in 1 minutes 55 seconds : 85 links scanned, 51 files written (3798128 bytes overall) [2949844 bytes received at 25650 bytes/sec], 1195576 bytes transferred using HTTP compression in 36 files, ratio 23%
+(33 errors, 0 warnings, 0 messages)

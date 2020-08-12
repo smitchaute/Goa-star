@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from www.playshrigoagems.com/results/result_old by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 12 Aug 2020 09:57:22 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <script type='text/javascript' src="../js/jquery-1.7.2.js"></script>
+    <script type="text/javascript">
+        var base_url = "../index.html";
+        var chat_id;
+        var user_id = "";
+        
+        var currTime = '';
+        
+        var localTime = +Date.now();
+        var timeDiff = '';
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!--<meta name="description" content="Reflect Template" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />-->
+    <title>GOA Star</title>
+    
+    <!--<link rel="stylesheet" href="http://www.playshrigoagems.com/css/style.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="http://www.playshrigoagems.com/css/jquery-ui.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="http://www.playshrigoagems.com/css/jquery.wysiwyg.css" type="text/css" media="screen" />-->
+    <link rel="stylesheet" href="../css/admin.css" type="text/css" media="screen" />
+    <!--<link rel="stylesheet" href="http://www.playshrigoagems.com/css/styles_menu.css" />-->
+    <link rel="stylesheet" href="../css/style_table.css" type="text/css" media="screen"/>
+
+    <!--<script type='text/javascript' src="http://www.playshrigoagems.com/js/jquery.dropkick-1.0.0.js"></script>-->
+    <script type='text/javascript' src="../js/homejs.js"></script>
+    <!--<script type='text/javascript' src="http://www.playshrigoagems.com/js/homejs2019.js"></script>-->
+    <script type="text/javascript" src="../js/ui/jquery.ui.core.js"></script>
+    <script type="text/javascript" src="../js/ui/jquery.ui.widget.js"></script>
+    <script type="text/javascript" src="../js/ui/jquery.ui.datepicker.js"></script>
+    
+    <!--Scripts FOR mENU-->
+    <style type="text/css">
+        #marqueecontainer {
+            position: relative;
+            width: 300px;
+            /*marquee width */
+            height: 200px;
+            /*marquee height */
+            background-color: #ECF4FE;
+            /*EEEEEE;/* white;*/
+            overflow: hidden;
+            border: 1px solid #666666;
+            /*padding: 5px;*/
+            padding-top: 5px;
+            padding-left: 10px;
+            float: right;
+        }
+    </style>
+
+  <!--  <style type="text/css">
+        div.home_viewport {
+            font-family: Verdana, Arial, sans-serif;
+            padding: 5px;
+            min-height: 290px;
+            color: black;
+            max-height: 290px;
+            height: 290px;
+            overflow-x: hidden;
+            overflow-y: auto;
+            word-wrap: break-word;
+        }
+        
+        div.home_viewport ul {
+            list-style-type: none;
+            padding-left: 10px;
+        }
+        
+        div.home_viewport ul li {
+            margin-top: 10px;
+            width: 85%;
+        }
+        
+        span.chat_message_header {
+            font-size: 1em;
+            font-family: "MS Trebuchet", Arial, sans-serif;
+            color: #547980;
+        }
+        
+        label.message_content {
+            font-size: 1.2em;
+            margin-top: 0px;
+            margin-bottom: 5px;
+            padding-left: 10px;
+            margin-right: 0px;
+        }
+        
+        input#chat_message {
+            margin-top: 5px;
+            border: 1px solid #585858;
+            width: 70%;
+            font-size: 1.2em;
+            margin-right: 10px;
+        }
+        
+        input#submit_message {
+            font-size: 2em;
+            padding: 5px 10px;
+            vertical-align: top;
+            margin-top: 5px;
+        }
+        
+        div#chat_input {
+            margin-bottom: 10px;
+        }
+        
+        div.home_viewport ul li.by_current_user span.chat_message_header {
+            color: #e9561b;
+        }
+        
+        /* DivTable.com */
+        .divTable{
+                display: table;
+                width: 100%;
+        }
+        .divTableRow {
+                display: table-row;
+        }
+        .divTableHeading {
+                background-color: #EEE;
+                display: table-header-group;
+        }
+        .divTableCell, .divTableHead {
+                border: 1px solid #999999;
+                display: table-cell;
+                padding: 3px 10px;
+        }
+        .divTableHeading {
+                background-color: #EEE;
+                display: table-header-group;
+                font-weight: bold;
+        }
+        .divTableFoot {
+                background-color: #EEE;
+                display: table-footer-group;
+                font-weight: bold;
+        }
+        .divTableBody {
+                display: table-row-group;
+        }
+    </style>-->
+  <style type="text/css">
+        .modal
+        {
+            position: fixed;
+            z-index: 999;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background-color: Black;
+            filter: alpha(opacity=60);
+            opacity: 0.9;
+            -moz-opacity: 0.9;
+        }
+        .center
+        {
+            z-index: 1000;
+            margin: 300px auto;
+            padding: 10px;
+            height: 80px;
+            width: 80px;
+            background-color: White;
+            border-radius: 10px;
+            filter: alpha(opacity=100);
+            opacity: 1;
+            -moz-opacity: 1;
+        }
+        .center img
+        {
+            height: 80px;
+            width: 80px;
+        }
+        
+               .buttonblink {
+  background-color: #004A7F;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  border: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Arial;
+  font-size: 20px;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  -webkit-animation: glowing 1500ms infinite;
+  -moz-animation: glowing 1500ms infinite;
+  -o-animation: glowing 1500ms infinite;
+  animation: glowing 1500ms infinite;
+}
+@-webkit-keyframes glowing {
+  0% { background-color: #B20000; -webkit-box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #FF0000; -webkit-box-shadow: 0 0 40px #FF0000; }
+  100% { background-color: #B20000; -webkit-box-shadow: 0 0 3px #B20000; }
+}
+
+@-moz-keyframes glowing {
+  0% { background-color: #B20000; -moz-box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #FF0000; -moz-box-shadow: 0 0 40px #FF0000; }
+  100% { background-color: #B20000; -moz-box-shadow: 0 0 3px #B20000; }
+}
+
+@-o-keyframes glowing {
+  0% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #FF0000; box-shadow: 0 0 40px #FF0000; }
+  100% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+}
+
+@keyframes glowing {
+  0% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #FF0000; box-shadow: 0 0 40px #FF0000; }
+  100% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+}
+    </style>
+
+</head>
+
+<body style="color:#000000;">
+    <div align="center" >
+                                       <div style="background-color:#990000">                         <marquee id="a" scrollamount="4" ONMOUSEOVER="this.stop();" ONMOUSEOUT="this.start();" style=" font-family:Verdana; color:#00000">
+                                                                                                            </marquee>
+                    </div>
+              
+            <!-- PAGE AREA -->
+
+                    <div align="center" class="container" style="width: 100%; ">
+                        <table cellspacing="0" cellpadding="0" width="100%">
+                            <tr>
+                                <td style="background-color: #990000; width:5px; ">
+                                    <!-- Left image-->
+                                </td>
+                                <td align="center">
+                                    <table cellpadding="0" cellspacing="0" style="width: 100%">
+                                        <!--HEADER -->
+                                        <tr>
+                                            <td height="10px" colspan="3" align="center" style="background-color:#990000; width:23%">
+                                                <img src="../images/goalogo.png" style="width:180px;">
+                                            </td>
+                                            <!-- AJAX VIEWPORT-->
+                                            <td colspan="2" style="background-color:#990000">
+                                                <div id="home_viewport" align="center" style="width: 100%; ">
+                                                    <table  style="background-color:#990000; width:100%" >
+	<tr>
+		<td colspan="16">
+			<div align="center">
+                            <table width="100%" style="border: #e9561b; border-style: dotted;  " >
+					<tr>
+                                            <td align="center" style="" >
+                                                <span style=" font-size:18px;  vertical-align: auto; color:#FFFFFF">
+                                                    <span style="color: #fed22f; font-size: medium ">Date</span>
+                                                    <strong><br/><span id="todays_date">&nbsp;</span><br/> 
+                                                    <span style="color: #fed22f; font-size: medium ">Result Draw</span><br/>
+                                                    <span id="result_time">&nbsp;</span></strong></span>
+                                            </td>
+						<td align="center">
+							<span style=" font-size:24px; color:#FFFFFF"><strong>
+						<table style="color:#990000; text-align:center; font-size:18px; width:100%; ">
+                                       <tr>
+                                           <td style="background-repeat: repeat-y; background-position: center; background-image:url(../images/gb_back.png); background-size: 55px 55px; width:55px; height:55px; "> <strong>GA</strong><br/><span style="font-size:14px">60-69</span> </td>
+               					   <td style="background-repeat: repeat-y; background-position: center; background-image:url(../images/gb_back.png); background-size: 55px 55px; width:55px; height:55px;"> <strong>SA</strong><br/><span style="font-size:14px">20-29</span> </td>
+               					     <td style="background-repeat: repeat-y; background-position: center; background-image:url(../images/gb_back.png); background-size: 55px 55px; width:55px; height:55px;"><strong>RA</strong><br/><span style="font-size:14px">10-19</span> </td>
+               						<td style="background-repeat: repeat-y; background-position: center; background-image:url(../images/gb_back.png); background-size: 80px 100px; width:80px; height:90px; " rowspan=2><strong style="font-size:22px;"> GOA </strong><br /> Star </td>
+               						<td style="background-repeat: repeat-y; background-position: center; background-image:url(../images/gb_back.png); background-size: 55px 55px; width:55px; height:55px; font-size:20pt; color: rgb(255,0,0);"><span id="star3_single">&nbsp;</span></td>
+                                       </tr>
+               					<tr>
+                                             <td style="background-repeat: repeat-y; background-position: center; background-image:url(../images/res_back.png);  background-size: 55px 45px; width:55px; height:45px; font-size:20pt; color: rgb(255,0,0);"><span id="result_GA">&nbsp;</span></td>
+							         <td style="background-repeat: repeat-y; background-position: center; background-image:url(../images/res_back.png); background-size: 55px 45px; width:55px; height:45px; font-size:20pt; color: rgb(255,0,0);"><span id="result_GB">&nbsp;</span></td>
+							         <td style="background-repeat: repeat-y; background-position: center; background-image:url(../images/res_back.png); background-size: 55px 45px; width:55px; height:45px; font-size:20pt; color: rgb(255,0,0);"><span id="result_GC">&nbsp;</span></td>
+							         <td style="background-repeat: repeat-y; background-position: center; background-image:url(../images/res_back.png); background-size: 55px 45px; width:55px; height:45px; font-size:20pt; color: rgb(255,0,0);"><span id="star3_sp">&nbsp;</span></td>
+							   </tr>
+                                   </table>
+                                       </strong>
+                                   </span>
+				          </td>
+					</tr>
+				</table>							
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="16">
+			<div>
+				<table width="100%" >
+                                    <tr>
+                                        <td align="left"><span style=" font-size:16px; color: #fed22f">Current Time<strong><br /><span style="color: #FFFFFF" id="currentTime">&nbsp;</span></strong></span></td>
+					<td align="center"><span style=" font-size:20px; color:#fed22f">Next Draw Time<strong><br /><span style="color: #FFFFFF" id="nextDraw">&nbsp;</span></strong></span></td>
+					<td align="right"><span style=" font-size:16px; color:#fed22f">Time Remaining<strong><br /><span style="color: #FFFFFF" id="timeRemaining">&nbsp;</span></strong></span></td>
+                                    </tr>
+                                </table>							
+			</div>
+		</td>
+	</tr>
+</table>
+                                                </div>
+                                            </td>
+                                            <td align="right" style="width:26%; background-color:#990000">
+                                                <form method="post" action="http://www.playshrigoagems.com/login/validate_login" id="home" name="home">
+                                                    <input type="hidden" id="nxtDrTime" name="nxtDrTime" value="" />
+                                                    <div id="logindiv" style="padding: 5px 5px 0px 5px; display:block">
+                                                        <span style=" font-size:18px; color:#FFFFFF">Card No </span>&nbsp;&nbsp;
+                                                        <input type="text" id="cardno" name="cardno" />
+                                                        <br />
+                                                        <span style=" font-size:18px; color:#FFFFFF">Pin No </span>&nbsp;&nbsp;
+                                                        <input type="password" id="pinno" name="pinno" />
+                                                        <br />
+                                                        <input style=" font-size:18px; height:40px; width:120px; padding:0px" name="btnLogin" type="submit" class="button" value="Login" />
+
+                                                    </div>
+                                                    <div id="logindiv" style="font-size:18px; padding: 5px 5px 0px 5px; display:none">
+                                                        <span style=" font-size:18px; color:#FFFFFF">Welcome </span>
+                                                        <br />
+                                                        <!--<span style=" font-size:14px; color:#FFFFFF">Point Limit </span>-->
+                                                        <div id="pointlimit_viewport" style=" font-size:18px;">
+                                                        </div>
+
+                                                        <span style=" font-size:14px; color:#FFFFFF"><a style=" color:#FFFF00"  href="../login/logout.html">Logout</a></span>
+                                                        <br/>
+                                                        <span style=" font-size:14px; color:#FFFFFF"><a style=" color:#FFFF00"  href="../main.html">Reset Password</a></span>
+                                                    </div>
+                                                </form>
+                                            </td>
+                                        </tr>
+                                        <tr style="background-color: #343131; color: #9ED929; font-weight: bolder; font-size: medium;">
+                                            <td colspan="4"></td>
+                                            <td align="center">
+                                                <table>
+                                                    <tr style="height: 30px">
+                                                        <td><a style="color: #9ED929 " href="../main.html">Home &nbsp;&nbsp;&nbsp;&nbsp; </a></td>
+                                                        <td><span style="color: #000000">|</span></td>
+                                                        <td><a style="color: #9ED929 " href="result_old.html"> &nbsp;&nbsp;&nbsp;&nbsp; Results </a></td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                            <td></td>
+                                        </tr>
+                                    </table>
+                                        
+                                    <br/>
+							    <div>
+<form method="post" id="result_form" name="result_form" action="http://www.playshrigoagems.com/results/showResultsOld" class="default">
+        <table width="90%" cellpadding="0" cellspacing="0" >
+            <tr align="left">
+                <td align="left" colspan="2" style=" font-size:22px">
+                    Results
+                    <br /><br /> 
+                </td>
+            </tr>
+            <tr>
+                <td style=" width:100px; font-size: 16px;">
+                    Date: <input type="text" id="datepicker" name="selectDate" value="08/12/2020">
+                </td>
+                <td align="left">
+                                    <input type="submit" value="Show" class="button" >
+                </td>
+                <td align="right" style="font-size: 16px;">
+                                                                    <a href="resultSummaryOld.html" class="button">Result Summary</a>
+                </td>
+            </tr>
+        </table>
+        <br />
+        <table  class="table1" style="width: 100%">     
+            <thead>
+            <tr  >
+                <th>Draw-Time</th>
+                <th style="background: #2056E6">Golden-A<br/>60-69</th>
+                <th style="background: #A120E6">Shubhlakshami-A<br/>20-29</th>
+                <th style="background: #E620AA">Rajashri-A<br/>10-19</th>
+                <th style="background: #E63820">GOA-Star</th>
+                          </tr></thead>
+                        <tbody>
+            <tr  >
+                <th scope="row" >3:15 PM </th>
+                                <td class="redc" style="background: #2056E6; font-size: 20px; color: #FFFFFF">65</td>
+                <td class="redc" style="background: #A120E6; font-size: 20px; color: #FFFFFF">13</td>
+                <td class="redc" style="background: #E620AA; font-size: 20px; color: #FFFFFF">44</td>
+                <td class="redc" style="background: #E63820; font-size: 20px; color: #FFFFFF">1 (146)</td>
+                             </tr></tbody>
+                                    <tbody>
+            <tr  >
+                <th scope="row" >3:00 PM </th>
+                                <td class="redc" style="background: #2056E6; font-size: 20px; color: #FFFFFF">15</td>
+                <td class="redc" style="background: #A120E6; font-size: 20px; color: #FFFFFF">36</td>
+                <td class="redc" style="background: #E620AA; font-size: 20px; color: #FFFFFF">94</td>
+                <td class="redc" style="background: #E63820; font-size: 20px; color: #FFFFFF">3 (139)</td>
+                             </tr></tbody>
+                                    <tbody>
+            <tr  >
+                <th scope="row" >2:45 PM </th>
+                                <td class="redc" style="background: #2056E6; font-size: 20px; color: #FFFFFF">78</td>
+                <td class="redc" style="background: #A120E6; font-size: 20px; color: #FFFFFF">14</td>
+                <td class="redc" style="background: #E620AA; font-size: 20px; color: #FFFFFF">08</td>
+                <td class="redc" style="background: #E63820; font-size: 20px; color: #FFFFFF">8 (170)</td>
+                             </tr></tbody>
+                                    <tbody>
+            <tr  >
+                <th scope="row" >2:30 PM </th>
+                                <td class="redc" style="background: #2056E6; font-size: 20px; color: #FFFFFF">40</td>
+                <td class="redc" style="background: #A120E6; font-size: 20px; color: #FFFFFF">58</td>
+                <td class="redc" style="background: #E620AA; font-size: 20px; color: #FFFFFF">12</td>
+                <td class="redc" style="background: #E63820; font-size: 20px; color: #FFFFFF">0 (145)</td>
+                             </tr></tbody>
+                                    <tbody>
+            <tr  >
+                <th scope="row" >2:15 PM </th>
+                                <td class="redc" style="background: #2056E6; font-size: 20px; color: #FFFFFF">57</td>
+                <td class="redc" style="background: #A120E6; font-size: 20px; color: #FFFFFF">36</td>
+                <td class="redc" style="background: #E620AA; font-size: 20px; color: #FFFFFF">14</td>
+                <td class="redc" style="background: #E63820; font-size: 20px; color: #FFFFFF">9 (135)</td>
+                             </tr></tbody>
+                                    <tbody>
+            <tr  >
+                <th scope="row" >2:00 PM </th>
+                                <td class="redc" style="background: #2056E6; font-size: 20px; color: #FFFFFF">14</td>
+                <td class="redc" style="background: #A120E6; font-size: 20px; color: #FFFFFF">90</td>
+                <td class="redc" style="background: #E620AA; font-size: 20px; color: #FFFFFF">27</td>
+                <td class="redc" style="background: #E63820; font-size: 20px; color: #FFFFFF">2 (129)</td>
+                             </tr></tbody>
+                                    <tbody>
+            <tr  >
+                <th scope="row" >1:45 PM </th>
+                                <td class="redc" style="background: #2056E6; font-size: 20px; color: #FFFFFF">21</td>
+                <td class="redc" style="background: #A120E6; font-size: 20px; color: #FFFFFF">89</td>
+                <td class="redc" style="background: #E620AA; font-size: 20px; color: #FFFFFF">66</td>
+                <td class="redc" style="background: #E63820; font-size: 20px; color: #FFFFFF">6 (268)</td>
+                             </tr></tbody>
+                                    <tbody>
+            <tr  >
+                <th scope="row" >1:30 PM </th>
+                                <td class="redc" style="background: #2056E6; font-size: 20px; color: #FFFFFF">22</td>
+                <td class="redc" style="background: #A120E6; font-size: 20px; color: #FFFFFF">08</td>
+                <td class="redc" style="background: #E620AA; font-size: 20px; color: #FFFFFF">96</td>
+                <td class="redc" style="background: #E63820; font-size: 20px; color: #FFFFFF">1 (290)</td>
+                             </tr></tbody>
+                                    <tbody>
+            <tr  >
+                <th scope="row" >1:15 PM </th>
+                                <td class="redc" style="background: #2056E6; font-size: 20px; color: #FFFFFF">87</td>
+                <td class="redc" style="background: #A120E6; font-size: 20px; color: #FFFFFF">08</td>
+                <td class="redc" style="background: #E620AA; font-size: 20px; color: #FFFFFF">65</td>
+                <td class="redc" style="background: #E63820; font-size: 20px; color: #FFFFFF">4 (680)</td>
+                             </tr></tbody>
+                                    <tbody>
+            <tr  >
+                <th scope="row" >1:00 PM </th>
+                                <td class="redc" style="background: #2056E6; font-size: 20px; color: #FFFFFF">08</td>
+                <td class="redc" style="background: #A120E6; font-size: 20px; color: #FFFFFF">67</td>
+                <td class="redc" style="background: #E620AA; font-size: 20px; color: #FFFFFF">66</td>
+                <td class="redc" style="background: #E63820; font-size: 20px; color: #FFFFFF">2 (660)</td>
+                             </tr></tbody>
+                                    <tbody>
+            <tr  >
+                <th scope="row" >12:45 PM </th>
+                                <td class="redc" style="background: #2056E6; font-size: 20px; color: #FFFFFF">11</td>
+                <td class="redc" style="background: #A120E6; font-size: 20px; color: #FFFFFF">89</td>
+                <td class="redc" style="background: #E620AA; font-size: 20px; color: #FFFFFF">58</td>
+                <td class="redc" style="background: #E63820; font-size: 20px; color: #FFFFFF">4 (158)</td>
+                             </tr></tbody>
+                                    <tbody>
+            <tr  >
+                <th scope="row" >12:30 PM </th>
+                                <td class="redc" style="background: #2056E6; font-size: 20px; color: #FFFFFF">24</td>
+                <td class="redc" style="background: #A120E6; font-size: 20px; color: #FFFFFF">65</td>
+                <td class="redc" style="background: #E620AA; font-size: 20px; color: #FFFFFF">48</td>
+                <td class="redc" style="background: #E63820; font-size: 20px; color: #FFFFFF">2 (246)</td>
+                             </tr></tbody>
+                                    <tbody>
+            <tr  >
+                <th scope="row" >12:15 PM </th>
+                                <td class="redc" style="background: #2056E6; font-size: 20px; color: #FFFFFF">03</td>
+                <td class="redc" style="background: #A120E6; font-size: 20px; color: #FFFFFF">56</td>
+                <td class="redc" style="background: #E620AA; font-size: 20px; color: #FFFFFF">99</td>
+                <td class="redc" style="background: #E63820; font-size: 20px; color: #FFFFFF">4 (590)</td>
+                             </tr></tbody>
+                                    <tbody>
+            <tr  >
+                <th scope="row" >12:00 PM </th>
+                                <td class="redc" style="background: #2056E6; font-size: 20px; color: #FFFFFF">66</td>
+                <td class="redc" style="background: #A120E6; font-size: 20px; color: #FFFFFF">98</td>
+                <td class="redc" style="background: #E620AA; font-size: 20px; color: #FFFFFF">36</td>
+                <td class="redc" style="background: #E63820; font-size: 20px; color: #FFFFFF">8 (369)</td>
+                             </tr></tbody>
+                                    <tbody>
+            <tr  >
+                <th scope="row" >11:45 AM </th>
+                                <td class="redc" style="background: #2056E6; font-size: 20px; color: #FFFFFF">64</td>
+                <td class="redc" style="background: #A120E6; font-size: 20px; color: #FFFFFF">52</td>
+                <td class="redc" style="background: #E620AA; font-size: 20px; color: #FFFFFF">47</td>
+                <td class="redc" style="background: #E63820; font-size: 20px; color: #FFFFFF">5 (456)</td>
+                             </tr></tbody>
+                                    <tbody>
+            <tr  >
+                <th scope="row" >11:30 AM </th>
+                                <td class="redc" style="background: #2056E6; font-size: 20px; color: #FFFFFF">26</td>
+                <td class="redc" style="background: #A120E6; font-size: 20px; color: #FFFFFF">84</td>
+                <td class="redc" style="background: #E620AA; font-size: 20px; color: #FFFFFF">95</td>
+                <td class="redc" style="background: #E63820; font-size: 20px; color: #FFFFFF">9 (289)</td>
+                             </tr></tbody>
+                                    <tbody>
+            <tr  >
+                <th scope="row" >11:15 AM </th>
+                                <td class="redc" style="background: #2056E6; font-size: 20px; color: #FFFFFF">84</td>
+                <td class="redc" style="background: #A120E6; font-size: 20px; color: #FFFFFF">35</td>
+                <td class="redc" style="background: #E620AA; font-size: 20px; color: #FFFFFF">26</td>
+                <td class="redc" style="background: #E63820; font-size: 20px; color: #FFFFFF">3 (238)</td>
+                             </tr></tbody>
+                                    <tbody>
+            <tr  >
+                <th scope="row" >11:00 AM </th>
+                                <td class="redc" style="background: #2056E6; font-size: 20px; color: #FFFFFF">54</td>
+                <td class="redc" style="background: #A120E6; font-size: 20px; color: #FFFFFF">85</td>
+                <td class="redc" style="background: #E620AA; font-size: 20px; color: #FFFFFF">10</td>
+                <td class="redc" style="background: #E63820; font-size: 20px; color: #FFFFFF">4 (158)</td>
+                             </tr></tbody>
+                                    <tbody>
+            <tr  >
+                <th scope="row" >10:45 AM </th>
+                                <td class="redc" style="background: #2056E6; font-size: 20px; color: #FFFFFF">67</td>
+                <td class="redc" style="background: #A120E6; font-size: 20px; color: #FFFFFF">90</td>
+                <td class="redc" style="background: #E620AA; font-size: 20px; color: #FFFFFF">40</td>
+                <td class="redc" style="background: #E63820; font-size: 20px; color: #FFFFFF">9 (469)</td>
+                             </tr></tbody>
+                                    <tbody>
+            <tr  >
+                <th scope="row" >10:30 AM </th>
+                                <td class="redc" style="background: #2056E6; font-size: 20px; color: #FFFFFF">15</td>
+                <td class="redc" style="background: #A120E6; font-size: 20px; color: #FFFFFF">78</td>
+                <td class="redc" style="background: #E620AA; font-size: 20px; color: #FFFFFF">56</td>
+                <td class="redc" style="background: #E63820; font-size: 20px; color: #FFFFFF">3 (157)</td>
+                             </tr></tbody>
+                                    <tbody>
+            <tr  >
+                <th scope="row" >10:15 AM </th>
+                                <td class="redc" style="background: #2056E6; font-size: 20px; color: #FFFFFF">86</td>
+                <td class="redc" style="background: #A120E6; font-size: 20px; color: #FFFFFF">14</td>
+                <td class="redc" style="background: #E620AA; font-size: 20px; color: #FFFFFF">46</td>
+                <td class="redc" style="background: #E63820; font-size: 20px; color: #FFFFFF">3 (148)</td>
+                             </tr></tbody>
+                                    <tbody>
+            <tr  >
+                <th scope="row" >10:00 AM </th>
+                                <td class="redc" style="background: #2056E6; font-size: 20px; color: #FFFFFF">01</td>
+                <td class="redc" style="background: #A120E6; font-size: 20px; color: #FFFFFF">35</td>
+                <td class="redc" style="background: #E620AA; font-size: 20px; color: #FFFFFF">68</td>
+                <td class="redc" style="background: #E63820; font-size: 20px; color: #FFFFFF">9 (360)</td>
+                             </tr></tbody>
+                                </table>
+        
+        <br /><br />
+            <!--<input type="button" class="button" value="Print"> -->
+</form>
+<br/>
+<br/>
+</div>
+
+
+                            <!--  HOME CONTENT END--!>
+                                        </div>
+                                </td>
+                                <td style="background-color: #990000; width:5px; ">
+                                    <!-- Right image-->
+                                </td>
+                            </tr>
+                        </table>
+
+                    </div>
+
+             
+<!--                  <div style="background-color:#990000; font-size: 6px;  color: #FFFFFF">
+                        Purchase of lottery using this website is strictly prohibited in the states where lotteries are banned.
+                    </div>-->
+                    <div style="background-color: black; color: green; padding-top: 25px; padding-bottom: 25px; font-size: 24px ; font-weight: 200;  ">
+                        For Results Contact : 9983107444 | 9649117666 | 9982217888<br/>
+                    </div>
+                    <div style="background-color:#990000; color: #FFFFFF; font-size: 6px">
+                        All the information shown here is sponsored and we warn you that Satta Matka gambling in your country,state may be banned or illegal.
+                        We are not responsible for any issues or scam. We respect all country, state rules/laws. If you not agree with our site disclaimer. Please quit our site right now.
+                    </div>
+                    <div style="background-color:#990000; color: #FFFFFF; font-size: 6px">
+                        You must be above 18 years to play.
+                    </div>
+             
+
+                                    <div style="background-color:#990000">
+
+                            <!--<span> <strong style>To Create Your Account, Contact : +91-7083444723</strong> </span>	-->
+                        </div>
+                        <div style="background-color:#990000; font-size: 6px;">
+                            @Copyright2020 All rights reserved to S M Marketing. <input type="hidden" id="nxtDrTime" name="nxtDrTime" />
+                        </div>
+                    
+    </div>
+
+    <br/>
+    <br/>
+    <script>
+    $(function() {
+        //$( "#datepicker" ).datepicker({ minDate: -20, maxDate: "+1M +10D" });
+        $( "#datepicker" ).datepicker({ minDate: -60, maxDate: 0 });
+        //$( "#datepicker" ).datepicker({ minDate: -20, maxDate: "+1M +10D" });
+        $( "#datepicker" ).datepicker( "option", "dateFormat", "dd/mm/yy" );
+        
+    });
+</script>
+    </body>
+
+<!-- Mirrored from www.playshrigoagems.com/results/result_old by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 12 Aug 2020 09:57:24 GMT -->
+</html>

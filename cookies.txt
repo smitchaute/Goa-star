@@ -1,0 +1,5 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+www.playshrigoagems.com	TRUE	/	FALSE	1999999999	PHPSESSID	d08b7674dad85b30483d1c17d8cedc1d
+www.playshrigoagems.com	TRUE	/	FALSE	1999999999	cookcard	deleted
+
